@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [[ $# -eq 0 ]]; then
+    # If no options are provided, run the command without release
+    maturin develop && python3 main.py
+elif [[ $# -eq 1 && $1 == "--release" ]]; then
+    # If --release option is provided, run the command with release
+    maturin develop --release && python3 main.py
+else
+    # If any other options are provided, display usage message
+    echo "Usage: $0 [--release]"
+    exit 1
+fi
+
