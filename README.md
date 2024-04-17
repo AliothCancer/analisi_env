@@ -8,7 +8,7 @@ I thought it in this way:
   - Using it for heavy lifting
 - Write python:
   - To visualize data
-  - Note: Or make some rust function to plot using some rust library
+  - Or make some rust function to plot using some rust library
 - Use a custom script to compile the library and run the main.py program
 
 # Python type hinting on rust imported function and classes
