@@ -1,5 +1,5 @@
 # The Aim of this repo
-The aim is to provide an already set up environment using rust and python to code.
+The aim is to provide an already set up environment using rust and python to code. But actually at the moment it is just a repo that for my own purposes, so I don't care if there is bad coding and it is not suitable for other use-cases. 
 
 # What can you do
 - Rust coding in lib.rs
