@@ -5,7 +5,7 @@ The aim is to provide an already set up environment using rust and python to cod
 - Rust coding in lib.rs
   - Write pymodule in which you can add pyfunction, pyclasses, etc...
     - For data type conversion from Rust type to Python type see [PyO3 data type table conversion](https://pyo3.rs/main/conversions/tables.html)
-- Run the Rust code you've written calling them in Python
+- Run the Rust code you've written calling them in a Python file
 
 
 # Python type hinting on rust imported function and classes
