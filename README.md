@@ -13,7 +13,7 @@ The aim is to provide an already set up environment using rust and python to cod
   2. Activate the virtualenv
   3. Run `maturin develop && python3 main.py` or `maturin develop --release && python3 main.py` (linux commands) to compile Rust code with optimizations.
 
-# Useful reference
+# Useful references
 - [Pyo3 user's guide](https://pyo3.rs/v0.21.2/)
 - [Data type conversion Rust-Python](https://pyo3.rs/main/conversions/tables.html)
 - [PyO3 Rust documentation](https://docs.rs/pyo3/latest/pyo3/)
