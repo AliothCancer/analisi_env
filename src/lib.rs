@@ -1,30 +1,21 @@
-pub mod iced_app;
-pub mod plotter_svg_generator;
+pub mod plot_things;
+pub mod analisi_tools;
 
-use iced_app::run_app;
-use plotter_svg_generator::generate;
+use plot_things::iced_app::run_app;
+use plot_things::plotter_svg_generator::generate;
+use analisi_tools::load_data;
 use pyo3::prelude::*;
 
-/// Formats the sum of two numbers as string.
-#[pyfunction]
-fn sum_as_string(a: usize, b: usize) -> PyResult<String> {
-    Ok((a + b).to_string())
-}
 
 /// A Python module implemented in Rust.
 #[pymodule]
 fn analisi_env(_py: Python, m: &PyModule) -> PyResult<()> {
-    m.add_function(wrap_pyfunction!(sum_as_string, m)?)?;
-    m.add_function(wrap_pyfunction!(sum_numbers, m)?)?;
     m.add_function(wrap_pyfunction!(plot, m)?)?;
+    m.add_function(wrap_pyfunction!(load_data::data_head,m)?)?;
     Ok(())
 }
 
-#[pyfunction]
-fn sum_numbers(number: u128) -> PyResult<u128> {
-    let rng = 0..number;
-    Ok(rng.into_iter().sum())
-}
+
 
 #[allow(unused)]
 #[pyfunction]
