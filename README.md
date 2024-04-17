@@ -18,4 +18,13 @@ The aim is to provide an already set up environment using rust and python to cod
   (So just write the .pyi file with python sintax type hinting using '''docs comment''')
  
 # Tools used
-This is just an already initialialized [maturin](https://github.com/PyO3/maturin) project with [PyO3](https://github.com/PyO3/pyo3)
+This is just an already initialialized [maturin](https://github.com/PyO3/maturin) project with [PyO3](https://github.com/PyO3/pyo3).
+
+
+*you can follow maturin guides, this repo is just ready to use*
+
+# Dependencies
+- Rust: see [here](https://www.rust-lang.org/tools/install) for install instructions
+- virtualenv python module (pip available)
+- maturin (pip available)
+- patchelf (pip available)
