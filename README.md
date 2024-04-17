@@ -13,6 +13,11 @@ The aim is to provide an already set up environment using rust and python to cod
   2. Activate the virtualenv
   3. Run `maturin develop && python3 main.py` or `maturin develop --release && python3 main.py` (linux commands) to compile Rust code with optimizations.
 
+# Useful reference
+- [Pyo3 user's guide](https://pyo3.rs/v0.21.2/)
+- [Data type conversion Rust-Python](https://pyo3.rs/main/conversions/tables.html)
+- [PyO3 Rust documentation](https://docs.rs/pyo3/latest/pyo3/)
+
 # Python type hinting on rust imported function and classes
   After the rust code is compiled with `maturin develop`, the rust library will be available to import in a python program (using the virtual environment python interpreter) but type hinting does not come automatically, so you'll need to write the .pyi file and define all the type hinting for your rust functions, classes, etc... . The name of the .pyi name should be the function's name that is tagged with #[pymodule], in lib.rs.
   (So just write the .pyi file with python sintax type hinting using '''docs comment''')
