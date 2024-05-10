@@ -1,12 +1,11 @@
 pub mod plot_things;
 pub mod analisi_tools;
-pub mod ml_and_statistics;
 
 use plot_things::iced_app::run_app;
 use plot_things::plotter_svg_generator::generate;
 use analisi_tools::load_data;
 use pyo3::prelude::*;
-use ml_and_statistics::knn_model;
+
 
 
 /// A Python module implemented in Rust.
